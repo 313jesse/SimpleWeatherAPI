@@ -33,6 +33,7 @@ namespace WeatherAPI.Controllers
                 JObject jsonData = JObject.Parse(data);
                 ViewBag.DataTemperature = jsonData["data"]["temperature"];
                 ViewBag.DataWeather = jsonData["data"]["weather"];
+                ViewBag.DataIcon = jsonData["data"]["iconLink"];
 
                 ViewBag.data = data;
             }
